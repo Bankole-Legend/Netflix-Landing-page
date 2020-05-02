@@ -1,6 +1,8 @@
+/* the main color reference */
 :root {
     --primary-color: #e50914;
 }
+/* some common initial styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,8 +20,8 @@ ul {
 }
 h1, h2, h3, h4 {
     color: #fff;
-
 }
+/* styling the view port area */
 a {
     color: #fff;
     text-decoration: none;
@@ -97,8 +99,8 @@ img {
     border-radius: 5px;
 }
 .large {
-    font-size: 2rem;
-    padding: 1.5rem 2.1rem;
+    font-size: 1.5rem; 
+    padding: 0.9rem 1.5rem;
     text-transform: uppercase;
 }
 /* .lg {
@@ -106,12 +108,15 @@ img {
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
 } */
-.switch {
+
+
+/* the tabs below the 93vh */
+.tabs {
 background-color: #141414;
 padding-top: 1rem;
 border-bottom: 3px solid #3d3d3d;
 }
-.switch .boxes {
+.tabs .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr; */
     grid-gap: 1rem;
@@ -119,31 +124,62 @@ border-bottom: 3px solid #3d3d3d;
     justify-content: center;
     text-align: center;
    } 
-.boxes {
+.container {
     max-width: 70%;
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
 }
-.switch p {
+ .tabs p {
    font-size: 1.2rem;
    padding-top: 0.5rem;
 }
-.switch .boxes > div {
+.tabs .container > div {
     padding: 1.5rem 0;
 }
-.switch .boxes > div:hover {
+.tabs .container > div:hover {
     color: #fff;
     cursor: pointer;
 }
-.box-line {
+.tab-border {
     border-bottom: var(--primary-color) 4px solid;
 }
 
-.switch {
+/* All the contents of the main section */
+.tab-content {
+    padding: 3rem 0;
+    background-color: #000;
+    color: #fff;
+}
+#tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: rem;
+    align-items: center;
+    justify-content: center;
+}
+#tab-2-content .tab-2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* text styles */
+.text-lg {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;  
+}
+.text-dark {
+
 }
