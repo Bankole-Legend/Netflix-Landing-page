@@ -153,9 +153,9 @@ border-bottom: 3px solid #3d3d3d;
 }
 
 /* Hiding the contents */
-#tab-1-content
-#tab-2-content
-#tab-3-content{
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
     display: none;
 }
 .show {
