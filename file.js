@@ -1,4 +1,4 @@
-// Grabing all the icons
+// Grabing the necessary classes
 const boxes = document.querySelectorAll('.tab-item');
 const tabContent = document.querySelectorAll('.tab-content-item');
 
@@ -10,7 +10,9 @@ function showItem(e){
     
     const showing = document.querySelector(`#${this.id}-content`);
     showing.classList.add('show');
+    console.log(this.id);
     
+   
 }
 
 // The function to remove the red border

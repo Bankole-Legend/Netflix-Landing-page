@@ -152,15 +152,13 @@ border-bottom: 3px solid #3d3d3d;
     color: #fff;
 }
 
-/* Hiding the contents */
-#tab-1-content,
+/* Hiding the contents  first*/
+/* #tab-1-content,
 #tab-2-content,
 #tab-3-content {
     display: none;
-}
-.show {
-    display: block !important;
-}
+} */
+
 
 #tab-1-content .tab-1-content-inner {
     display: grid;
@@ -245,4 +243,14 @@ color: #999;
 }
 footer li {
     line-height: 1.9;
+}
+
+/* Hiding the contents  first*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+.show {
+    display: block !important;
 }
