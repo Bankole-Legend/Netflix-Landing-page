@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Grabing the necessary classes
 const boxes = document.querySelectorAll('.tab-item');
 const tabContent = document.querySelectorAll('.tab-content-item');
@@ -28,3 +29,19 @@ function display() {
 
 boxes.forEach(box => box.addEventListener('click', showItem));
 
+=======
+// Grabing all the icons
+const boxes = document.querySelectorAll('.tab-item');
+const tabContent = document.querySelectorAll('.tab-content-item');
+
+function showItem() {
+    boxes.forEach(box => box.classList.remove("tab-border"));
+    tabContent.forEach(box => box.classList.remove('show'));
+
+    this.classList.add("tab-border");
+    
+    document.querySelector(`#${this.id}-content`).classList.add("show");
+}
+
+boxes.forEach(item => item.addEventListener('click', showItem))
+>>>>>>> c53cfd4ebef68db56a452c94caa2cda9d6358604
